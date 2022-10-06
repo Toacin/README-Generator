@@ -1,10 +1,9 @@
-// TODO: Include packages needed for this application
+//packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-
-// TODO: Create an array of questions for user input
+//array of questions for user input
 const questions = [
     {
         name: "username",
@@ -51,28 +50,28 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
+// function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => err ? console.log(err) : console.log("Success!"));
 }
 
-// TODO: Create a function to initialize app
+// function to initialize app
 function init() {
     inquirer.prompt(questions)
         .then((answers) => {
+            // this for loop will initialize an empty an array and create an array of objects of questions to then re-prompt the user for github usernames collaborators.
             let collabQuestions = [];
             for (i=0; i<answers.collaborators; i++) {
                 collabObject = {name: `collaborator${i+1}`, message: `What is the github username of collaborator number ${i+1}`};
                 collabQuestions.push(collabObject);
             }
+            // if the array has length, re-inquire.prompt. Pass both answers from first and second prompts to generate markdown function and write new file. If not, pass only answers from first prompt and write new file
             if (collabQuestions) {
                 inquirer.prompt(collabQuestions)
-                    .then((answersCollab) => writeToFile("README.md", generateMarkdown(answers, answersCollab)))
+                    .then((answersCollab) => writeToFile("./testFolder/README.md", generateMarkdown(answers, answersCollab)))
             } else {
-                writeToFile("README.md", generateMarkdown(answers));
+                writeToFile("./testFolder/README.md", generateMarkdown(answers));
             }
-            // console.log(answers);
-            // let markdown = generateMarkdown(answers);
         })
 }
 

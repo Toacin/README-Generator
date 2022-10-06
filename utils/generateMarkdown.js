@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// function that returns a license badge based on which license is passed in. If there is no license, returns an empty string
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT": 
@@ -36,6 +35,7 @@ let renderLicenseSection = (license) => license!=="none" ? `This project uses th
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data, collabData) {
   console.log(collabData);
+  // this function will check if second set of answers has been passed into it, if so, append collaborators from data into new list item. Else say there are no collaborators.
   const collabList = function() {
     if (Object.keys(collabData).length === 0) {
       return "there are no collaborators"
@@ -48,17 +48,18 @@ function generateMarkdown(data, collabData) {
       return collabstr;
     }
   };
-  return `
-# ${data.projectName}
+  return `# ${data.projectName}
 ${renderLicenseBadge(data.license)}
 
 ## Table of Contents
 * [Description](#Description)
 * [Installation](#Installation)
 * [Usage](#Usage)
+* [Test](#Test)
 * [License](#License)
 * [Contribute](#Contribute)
 * [Questions](#Questions)
+* [Collaborators](#Collaborators)
 
 
 ## Description
@@ -74,6 +75,10 @@ Installation instructions: ${data.install}
 ## Usage
 
 ${data.usage}
+
+## Test
+
+Run this command to test: ${data.test}
 
 ## License
 

@@ -1,6 +1,6 @@
 
-# undefined
-undefined
+# README-Generator
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
 * [Description](#Description)
@@ -13,33 +13,31 @@ undefined
 
 ## Description
 
-undefined
+This application prompts the user (via Windows Command Processor/Terminal) a series of questions, for which the respective answers will be used as parameters for generating a README.md file. Developing this application used the following technologies: Nodejs, Inquirer package, and the file system package. My biggest motivation for developing this application was in fact to learn more of the latter two aforementioned technologies. Another concept I explored during the development of this application was modularization. Namely, this occurs in the included ./utils/generateMarkdown.js file.
+
+
+## Demo
+
+
 
 ---
 
 ## Installation
 
-Installation instructions: undefined
-
-## Usage
-
-undefined
+Installation instructions: npm i
 
 ## License
 
-This project uses the undefined
-undefined
+This project uses the MIT
+https://opensource.org/licenses/MIT
 
 ---
 
-## Contribute
-
-undefined
-
 ## Questions
 
-If you have any follow up questions, feel free to reach out at undefined
-GitHub: https://www.github.com/jsfkldjfs
+If you have any follow up questions, feel free to reach out at sdfjklsdfjdsl
+GitHub: https://www.github.com/sjfklsdfj
 
 ## Collaborators
-there are no collaborators
+
+There are no collaborators
