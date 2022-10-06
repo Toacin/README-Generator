@@ -34,20 +34,8 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-  switch (license) {
-    case "MIT":
-      return `This project uses the MIT License`;
-    case "Apache":
-      return `This project uses the Apache License`;
-    case "Mozilla": 
-      return `This project uses the Mozilla License`;
-    case "none":
-      return `N/A`;
-    default:
-      break;
-  }
-}
+let renderLicenseSection = (license) => license!=="none" ? `This project uses the ${license}` : "N/A";
+
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -92,7 +80,7 @@ ${data.contribute}
 ## Questions
 
 If you have any follow up questions, feel free to reach out at ${data.email}
-GitHub: https://www.github.com/${username}
+GitHub: https://www.github.com/${data.username}
 `;
 }
 

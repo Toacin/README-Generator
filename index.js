@@ -58,11 +58,10 @@ function init() {
     inquirer.prompt(questions)
         .then((answers) => {
             console.log(answers);
-            let markdown = generateMarkdown(answers);
-            writeToFile("README.md", markdown);
+            // let markdown = generateMarkdown(answers);
+            writeToFile("README.md", generateMarkdown(answers));
         }
         )
-        .catch((err) => err ? console.log("something went wrong") : console.log("Answers Logged"))
 }
 
 // Function call to initialize app
