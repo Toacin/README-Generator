@@ -73,8 +73,7 @@ function init() {
             }
             // console.log(answers);
             // let markdown = generateMarkdown(answers);
-        }
-        )
+        })
 }
 
 // Function call to initialize app
