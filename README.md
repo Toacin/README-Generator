@@ -1,6 +1,6 @@
 
-# jfksdlfjsdlkf
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# README Generator
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 ## Table of Contents
 * [Description](#Description)
@@ -13,30 +13,30 @@
 
 ## Description
 
-fjkdslfjslkdf
+It's a readme generator
 
 ---
 
 ## Installation
 
-Installation instructions: jsfkldjf
+Installation instructions: N/A
 
 ## Usage
 
-fjdklsfjlk
+nothing
 
 ## License
 
-This project uses the Apache
-https://opensource.org/licenses/Apache-2.0
+This project uses the Mozilla
+https://opensource.org/licenses/MPL-2.0
 
 ---
 
 ## Contribute
 
-fjkdsljfklsd
+They don't gotta know anything
 
 ## Questions
 
-If you have any follow up questions, feel free to reach out at sjfkdljfls
-GitHub: https://www.github.com/jfkdlsjfd
+If you have any follow up questions, feel free to reach out at toacinp@outlook.com
+GitHub: https://www.github.com/Toacin
