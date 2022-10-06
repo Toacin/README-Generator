@@ -44,6 +44,10 @@ const questions = [
     {
         name: "test",
         message: "What command should be run to run tests?",
+    },
+    {
+        name: "collaborators",
+        message: "How many collaborators?",
     }
 ];
 
@@ -56,9 +60,19 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
         .then((answers) => {
-            console.log(answers);
+            let collabQuestions = [];
+            for (i=0; i<answers.collaborators; i++) {
+                collabObject = {name: `collaborator${i+1}`, message: `What is the github username of collaborator number ${i+1}`};
+                collabQuestions.push(collabObject);
+            }
+            if (collabQuestions) {
+                inquirer.prompt(collabQuestions)
+                    .then((answersCollab) => writeToFile("README.md", generateMarkdown(answers, answersCollab)))
+            } else {
+                writeToFile("README.md", generateMarkdown(answers));
+            }
+            // console.log(answers);
             // let markdown = generateMarkdown(answers);
-            writeToFile("README.md", generateMarkdown(answers));
         }
         )
 }

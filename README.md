@@ -1,6 +1,6 @@
 
-# README Generator
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+# undefined
+undefined
 
 ## Table of Contents
 * [Description](#Description)
@@ -13,30 +13,33 @@
 
 ## Description
 
-It's a readme generator
+undefined
 
 ---
 
 ## Installation
 
-Installation instructions: N/A
+Installation instructions: undefined
 
 ## Usage
 
-nothing
+undefined
 
 ## License
 
-This project uses the Mozilla
-https://opensource.org/licenses/MPL-2.0
+This project uses the undefined
+undefined
 
 ---
 
 ## Contribute
 
-They don't gotta know anything
+undefined
 
 ## Questions
 
-If you have any follow up questions, feel free to reach out at toacinp@outlook.com
-GitHub: https://www.github.com/Toacin
+If you have any follow up questions, feel free to reach out at undefined
+GitHub: https://www.github.com/jsfkldjfs
+
+## Collaborators
+there are no collaborators

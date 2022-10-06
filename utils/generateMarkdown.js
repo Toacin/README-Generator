@@ -34,7 +34,20 @@ let renderLicenseSection = (license) => license!=="none" ? `This project uses th
 
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(data, collabData) {
+  console.log(collabData);
+  const collabList = function() {
+    if (Object.keys(collabData).length === 0) {
+      return "there are no collaborators"
+    } else {
+      let collabstr = '';
+      for (const key in collabData) {
+        collabstr = collabstr.concat(`[${collabData[key]}](https://www.github.com/${collabData[key]})  
+`);
+      }
+      return collabstr;
+    }
+  };
   return `
 # ${data.projectName}
 ${renderLicenseBadge(data.license)}
@@ -77,6 +90,10 @@ ${data.contribute}
 
 If you have any follow up questions, feel free to reach out at ${data.email}
 GitHub: https://www.github.com/${data.username}
+
+## Collaborators
+
+${collabList()}
 `;
 }
 
