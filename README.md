@@ -18,13 +18,17 @@ This application prompts the user (via Windows Command Processor/Terminal) a ser
 
 ## Demo
 
-
+![Demo](./assets/DEMO.gif "Demo of Application")
 
 ---
 
 ## Installation
 
-Installation instructions: npm i
+Installation instructions: `npm i`
+
+## Usage
+
+In Windows Command Processor/Terminal, run `node index.js`
 
 ## License
 
@@ -35,9 +39,5 @@ https://opensource.org/licenses/MIT
 
 ## Questions
 
-If you have any follow up questions, feel free to reach out at sdfjklsdfjdsl
-GitHub: https://www.github.com/sjfklsdfj
-
-## Collaborators
-
-There are no collaborators
+If you have any follow up questions, feel free to reach out at toacinp@gmail.com  
+GitHub: https://www.github.com/Toacin
